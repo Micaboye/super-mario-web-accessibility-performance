@@ -41,7 +41,7 @@ header a {
 }
 .banner .welcome {
   background: #feb614;
-  color: white;
+  color: #333;
   padding: 30px;
   font-size: 60px;
   position: absolute;
@@ -190,13 +190,11 @@ input[type="submit"]:focus {
   outline: none;
 }
 footer {
-  background: #f63232;
+  background: #c91f1f;
   color: white;
   padding: 10px;
   text-align: center;
 }
-
-/* responsive styles */
 
 @media screen and (max-width: 1400px) {
   .banner .welcome {
