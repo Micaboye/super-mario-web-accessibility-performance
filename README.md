@@ -1360,3 +1360,43 @@ Inden du afslutter opgaven, skal du kontrollere:
 ## Afsluttende note
 
 > Udviklet til studerende på **3. semester**. Ingen AI-værktøjer er nødvendige — opgaven kan løses med en browser, en teksteditor, et tastatur og et simpelt billedværktøj.
+
+
+
+
+
+
+
+
+
+## Dokumentation
+
+### Lighthouse-resultater
+
+| Performance før | Performance efter | Accessibility efter |
+| 89 | 100 | 96 |
+
+
+### Hvilke ændringer gav den største forbedring af performance?
+
+Den største forskel kom fra at optimere det store bannerbillede og konvertere det fra JPG til WebP. Det gjorde billedfilen mindre og siden hurtigere. Performance gik fra 89 til 100.
+
+### Hvilke accessibility-problemer fandt jeg?
+
+Jeg fandt blandt andet problemer med formularer, der manglede labels, heading-strukturen, manglende `aria-current` og for lav kontrast mellem tekst og baggrund. Jeg tilføjede også `lang="en"` og `charset` til siderne.
+
+### Hvad fandt Lighthouse?
+
+Lighthouse viste blandt andet, at der var mulighed for at optimere billederne og forbedre kontrasten på siden. Efter ændringerne endte jeg på 100 i Performance og 96 i Accessibility.
+
+### Hvad fandt WAVE?
+
+WAVE fandt nogle kontrastfejl, blandt andet i banneret og footeren. Dem rettede jeg ved at ændre farverne i CSS. WAVE viste også en alert om et redundant link, som jeg vurderede manuelt.
+
+### Hvad krævede HeadingsMap eller manuel kontrol?
+
+Jeg brugte HeadingsMap til at tjekke heading-strukturen på alle sider. Jeg ændrede strukturen, så hver side har én tydelig `h1`, og de efterfølgende overskrifter bruger `h2`.
+
+### Hvad har jeg lært?
+
+Jeg har lært, at ret små ændringer kan gøre en stor forskel for både performance og tilgængelighed. Især billedoptimering gjorde en stor forskel for performance, mens labels, headings, kontrast og korrekt HTML gjorde siderne mere tilgængelige.
